@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>Radio button</h1>
+<form>
+  <input type="radio" id="male" name="sex" value="Male">
+  <label for="male">Male</label><br>
+  <input type="radio" id="female" name="sex" value="Female">
+  <label for="female">Female</label>
+</form>
+<h1>checkboxs</h1>
+<form>
+  <input type="checkbox" id="male" name="sex" value="Male">
+  <label for="male">Male</label><br>
+  <input type="checkbox" id="female" name="sex" value="Female">
+  <label for="female">Female</label>
+</form>
+<h1>submit</h1>
+<form action="index.html">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="Duy"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Manh"><br><br>
+  <input type="submit" value="Submit">
+</form>
+<h1>select</h1>
+<form action="">
+    <label for="cars">Choose a car:</label>
+<select id="cars" name="cars">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat">Fiat</option>
+  <option value="audi">Audi</option>
+</select>
+</form>
+<br>
+<textarea name="message" rows="10" cols="30">Pham Tien Manh 2221050255</textarea>
+<h1>fieldset and legend</h1>
+<form action="index.html">
+  <fieldset>
+    <legend>Full Name</legend>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="Tien"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Manh"><br><br>
+    <input type="submit" value="Submit">
+  </fieldset>
+</form>
+<h1>datalist</h1>
+<form action="index.html">
+  <input list="browsers">
+  <datalist id="browsers">
+    <option value="Edge">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+  <input type="submit">
+</form>
+<h1>out put</h1>
+<form action="index.html"
+oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range" id="a" name="a" value="50">
+  100 +
+  <input type="number" id="b" name="b" value="50">
+  =
+  <output name="x" for="a b"></output>
+  <br><br>
+  <input type="submit">
+</form>
+<form>
+  <label for="birthday">Birthday:</label>
+  <input type="date" id="birthday" name="birthday">
+</form>
+<form>
+  <label for="datemax">Enter a date before 1980-01-01:</label>
+  <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+  <label for="datemin">Enter a date after 2000-01-01:</label>
+  <input type="date" id="datemin" name="datemin" min="2000-01-02">
+</form>
+<form>
+  <label for="birthdaytime">Birthday (date and time):</label>
+  <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+</form>
+<form>
+  <label for="email">Enter your email:</label>
+  <input type="email" id="email" name="email">
+</form>
+<!-- <input type="button">
+<input type="checkbox">
+<input type="color">
+<input type="date">
+<input type="datetime-local">
+<input type="email">
+<input type="file">
+<input type="hidden">
+<input type="image">
+<input type="month">
+<input type="number">
+<input type="password">
+<input type="radio">
+<input type="range">
+<input type="reset">
+<input type="search">
+<input type="submit">
+<input type="tel">
+<input type="text">
+<input type="time">
+<input type="url">
+<input type="week"> -->
+</body>
+</html>

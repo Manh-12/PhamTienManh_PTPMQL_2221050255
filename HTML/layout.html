@@ -1,0 +1,128 @@
+<<!DOCTYPE html>
+<html>
+<head>
+    <title>Bài tập Layout - PHAM TIEN MANH</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+
+        /* 1. HEADER: Phần đầu trang (Logo, Tên web) */
+        header {
+            background-color: #2196F3; /* Xanh dương */
+            color: white;
+            padding: 30px;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        /* 2. NAV: Thanh điều hướng (Menu) */
+        nav {
+            background-color: #333;
+            overflow: hidden; /* Để chứa các nút float bên trong */
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none; /* Bỏ gạch chân */
+        }
+        nav a:hover { background-color: #ddd; color: black; }
+
+        /* 3. CONTAINER: Khung bao quanh phần nội dung chính (để chia cột) */
+        .container {
+            display: flex; /* Dùng Flexbox để chia cột hiện đại */
+            flex-wrap: wrap; /* Tự xuống dòng nếu màn hình bé */
+        }
+
+        /* 4. ASIDE: Cột phụ bên trái (Sidebar) */
+        aside {
+            flex: 30%; /* Chiếm 30% chiều rộng */
+            background-color: #f1f1f1;
+            padding: 20px;
+            box-sizing: border-box; /* Tính cả padding vào kích thước */
+        }
+
+        /* 5. ARTICLE: Cột chính bên phải (Bài viết) */
+        article {
+            flex: 70%; /* Chiếm 70% chiều rộng */
+            background-color: white;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* 6. FOOTER: Chân trang */
+        footer {
+            background-color: #777;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            margin-top: 20px;
+        }
+
+        /* Ảnh đại diện giả lập */
+        .fakeimg {
+            background-color: #aaa;
+            width: 100%;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .can-giua-anh {
+            display: block;           
+            margin-left: auto;       
+            margin-right: auto;       
+            margin-top: 20px;         
+            margin-bottom: 20px;     
+            max-width: 100%;          
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>BLOG CỦA PHAM TIEN MANH</h1>
+        <p>Chia sẻ kiến thức lập trình & Cuộc sống sinh viên HUMG</p>
+    </header>
+
+    <nav>
+        <a href="#">Trang chủ</a>
+        <a href="#">Bài viết</a>
+        <a href="#">Dự án</a>
+        <a href="#" style="float:right">Liên hệ</a>
+    </nav>
+
+    <div class="container">
+        
+        <aside>
+            <h2>Giới thiệu</h2>
+            <img src="/images/Avatar.png" alt="HÌNH VỠ VÌ CHƯA TẠO FOLDER" class="can-giua-anh">
+            <p>Mình là  Manh, MSSV 2221050255.</p>
+            <h3>Môn học yêu thích</h3>
+            <p>Web, Database, Java...</p>
+        </aside>
+
+        <article>
+            <h2>BÀI VIẾT: TẠI SAO NÊN DÙNG THẺ LAYOUT?</h2>
+            <p>Ngày đăng: 13/01/2026</p>S
+            <img src="/images/Avatar.png" alt="HÌNH VỠ VÌ CHƯA TẠO FOLDER" class="can-giua-anh">
+            <p>
+                Thay vì dùng thẻ <code>div</code> cho mọi thứ, HTML5 giới thiệu các thẻ có ý nghĩa (Semantic Tags) như:
+                <code>header</code>, <code>nav</code>, <code>article</code>, <code>footer</code>.
+            </p>
+            <p>
+                Việc này giúp trình duyệt và Google hiểu rõ cấu trúc trang web của bạn hơn.
+                Ví dụ: Google biết chắc chắn nội dung trong thẻ <code>article</code> là bài viết chính, 
+                còn <code>nav</code> chỉ là menu thôi.
+            </p>
+        </article>
+    </div>
+
+    <footer>
+        <p>Copyright © 2026 Pham Tien Manh - HUMG</p>
+    </footer>
+
+</body>
+</html>

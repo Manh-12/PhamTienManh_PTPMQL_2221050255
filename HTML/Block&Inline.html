@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bài tập Class và ID - Pham Tien Manh</title>
+    <style>
+        /* 1. ID (#): Dùng cho phần tử DUY NHẤT (Header, Footer) */
+        #header-chinh {
+            background-color: #2c3e50; /* Màu xanh đậm */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #footer-cuoi-trang {
+            background-color: black;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        /* 2. CLASS (.): Dùng cho NHIỀU phần tử giống nhau (Môn học) */
+        .mon-hoc {
+            background-color: #ecf0f1; /* Xám nhạt */
+            border: 1px solid #bdc3c7;
+            padding: 15px;
+            margin: 10px 0; /* Cách trên dưới 10px */
+            font-family: Arial, sans-serif;
+        }
+
+        /* 3. CLASS đặc biệt: Dùng để nhấn mạnh (có thể kết hợp) */
+        .noi-bat {
+            color: red;
+            font-weight: bold;
+            border-left: 5px solid red; /* Viền trái màu đỏ */
+        }
+    </style>
+</head>
+<body>
+
+    <div id="header-chinh">
+        <h1>HỒ SƠ SINH VIÊN: PHAM TIEN MANH</h1>
+        <p>MSSV: 2221050255 - HUMG</p>
+    </div>
+
+    <h2>Danh sách các môn học kỳ này:</h2>
+
+    <div class="mon-hoc">
+        <h3>1. Lập trình Web</h3>
+        <p>Học HTML, CSS, JavaScript cơ bản.</p>
+    </div>
+
+    <div class="mon-hoc noi-bat">
+        <h3>2. Cơ sở dữ liệu (Quan trọng)</h3>
+        <p>Môn này cần tập trung ôn thi kỹ.</p>
+    </div>
+
+    <div class="mon-hoc">
+        <h3>3. Tiếng Anh chuyên ngành</h3>
+        <p>Đọc hiểu tài liệu CNTT.</p>
+    </div>
+
+    <div id="footer-cuoi-trang">
+        Copyright © 2026 Pham Tien Manh
+    </div>
+
+</body>
+</html>

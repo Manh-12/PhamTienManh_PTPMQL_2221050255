@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài tập Images - Pham Tien Manh</title>
+    <style>
+        .banner-background {
+            background-image: url('https://www.w3schools.com/css/img_fjords.jpg');
+            background-size: cover; 
+            color: black; 
+            padding: 50px;
+            text-align: center;
+            border: 5px solid #333;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="banner-background">
+        <h1>ALBUM ẢNH: PHAM TIEN MANH</h1>
+        <h2>MSSV: 2221050255</h2>
+    </div>
+
+    <hr>
+
+    <h3>1. Ảnh đại diện (Cơ bản)</h3>
+    <img src="https://www.w3schools.com/howto/img_avatar.png" 
+         alt="Avatar Pham Tien Manh" 
+         style="width: 150px; border-radius: 50%;">
+
+    <hr>
+
+    <h3>2. Ảnh bản đồ (Image Map) - Hãy thử bấm vào máy tính hoặc điện thoại!</h3>
+    
+    <img src="https://www.w3schools.com/html/workplace.jpg" 
+         alt="Bàn làm việc" 
+         usemap="#ban_lam_viec" 
+         width="400">
+
+    <map name="ban_lam_viec">
+        <area shape="rect" coords="34,44,270,350" alt="Máy tính" href="https://www.w3schools.com/html/html_images.asp" target="_blank" title="Bấm để học bài HTML Images">
+
+        <area shape="rect" coords="290,172,333,250" alt="Điện thoại" href="https://www.w3schools.com/css/default.asp" target="_blank" title="Bấm để học CSS">
+        
+        <area shape="circle" coords="337,300,44" alt="Cà phê" href="#" onclick="alert('Giang đang uống cà phê!')" title="Uống cà phê">
+    </map>
+
+    <hr>
+
+    <h3>3. Thẻ &lt;picture&gt; 
+    
+
+    <picture>
+        <source media="(min-width: 650px)" srcset="https://www.w3schools.com/html/img_food.jpg">
+        
+        <source media="(min-width: 465px)" srcset="https://www.w3schools.com/html/img_girl.jpg">
+        
+        <img src="https://www.w3schools.com/html/img_chania.jpg" style="width:auto;">
+    </picture>
+
+</body>
+</html>
