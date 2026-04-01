@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <title>Bài tập Flexbox - Phạm Tiến Mạnh</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <style>
+    /* CSS tô màu để nhìn rõ bố cục */
+    .demo-container { background-color: #f1f1f1; border: 1px solid #ccc; margin-bottom: 15px; min-height: 100px;}
+    .demo-item { background-color: #0d6efd; color: white; padding: 15px; border: 1px solid white; }
+  </style>
+</head>
+<body>
+
+<div class="container mt-4">
+  <h2 class="text-center text-primary">BÀI TẬP FLEXBOX (BỐ CỤC LINH HOẠT)</h2>
+  <p class="text-center"><b>Sinh viên:</b> Tráng Lê Giang - <b>MSSV:</b> 2221050736</p>
+  <hr>
+
+  <h4>1. Hướng sắp xếp (Direction)</h4>
+  
+  <p><b>Hàng ngang (.flex-row):</b></p>
+  <div class="d-flex flex-row bg-secondary mb-3">
+    <div class="p-2 bg-info border">Item 1</div>
+    <div class="p-2 bg-info border">Item 2</div>
+    <div class="p-2 bg-info border">Item 3</div>
+  </div>
+
+  <p><b>Hàng dọc (.flex-column):</b></p>
+  <div class="d-flex flex-column bg-secondary mb-3">
+    <div class="p-2 bg-warning border">Item 1</div>
+    <div class="p-2 bg-warning border">Item 2</div>
+    <div class="p-2 bg-warning border">Item 3</div>
+  </div>
+
+  <hr>
+
+  <h4>2. Căn chỉnh ngang (Justify Content)</h4>
+  
+  <p>.justify-content-<b>start</b> (Trái):</p>
+  <div class="d-flex justify-content-start bg-light mb-2">
+    <div class="p-2 bg-primary text-white border">A</div>
+    <div class="p-2 bg-primary text-white border">B</div>
+  </div>
+
+  <p>.justify-content-<b>end</b> (Phải):</p>
+  <div class="d-flex justify-content-end bg-light mb-2">
+    <div class="p-2 bg-primary text-white border">A</div>
+    <div class="p-2 bg-primary text-white border">B</div>
+  </div>
+
+  <p>.justify-content-<b>center</b> (Giữa):</p>
+  <div class="d-flex justify-content-center bg-light mb-2">
+    <div class="p-2 bg-primary text-white border">A</div>
+    <div class="p-2 bg-primary text-white border">B</div>
+  </div>
+
+  <p>.justify-content-<b>between</b> (Dãn đều 2 bên):</p>
+  <div class="d-flex justify-content-between bg-light mb-2">
+    <div class="p-2 bg-primary text-white border">A</div>
+    <div class="p-2 bg-primary text-white border">B</div>
+    <div class="p-2 bg-primary text-white border">C</div>
+  </div>
+
+  <hr>
+
+  <h4>3. Căn chỉnh dọc (Align Items)</h4>
+  <p>Căn giữa theo chiều cao (Yêu cầu khung cha phải có chiều cao):</p>
+  
+  <div class="d-flex align-items-center demo-container">
+    <div class="p-2 bg-success text-white border">Item căn giữa</div>
+    <div class="p-2 bg-success text-white border">Item căn giữa</div>
+  </div>
+
+  <hr>
+
+  <h4>4. Đổi thứ tự & Xuống dòng</h4>
+  
+  <div class="d-flex flex-wrap bg-light">
+    <div class="p-2 border bg-dark text-white order-3">Vị trí 1 (Order 3)</div>
+    <div class="p-2 border bg-dark text-white order-2">Vị trí 2 (Order 2)</div>
+    <div class="p-2 border bg-dark text-white order-1">Vị trí 3 (Order 1)</div>
+  </div>
+
+</div>
+
+<div class="container-fluid mt-5 p-3 bg-light text-center border-top">
+  <small>© 2026 Phạm Tiến Mạnh</small>
+</div>
+
+</body>
+</html>

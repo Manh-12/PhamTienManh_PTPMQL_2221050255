@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <title>Bài tập Validation - Phạm Tiến Mạnh</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container mt-4">
+  <h2 class="text-primary text-center">BÀI TẬP KIỂM TRA DỮ LIỆU VALIDATION</h2>
+  <p class="text-center"><b>Sinh viên:</b> Phạm Tiến Mạnh - <b>MSSV:</b> 2221050255</p>
+  <p class="text-center text-muted"><i>(Hãy thử bấm nút Gửi khi chưa nhập gì để xem lỗi)</i></p>
+  <hr>
+
+  <form action="/action_page.php" class="needs-validation" novalidate>
+    
+    <div class="mb-3 mt-3">
+      <label for="uname" class="form-label">Tên đăng nhập:</label>
+      <input type="text" class="form-control" id="uname" placeholder="Nhập tên đăng nhập" name="uname" required>
+      
+      <div class="valid-feedback">Hợp lệ.</div>
+      <div class="invalid-feedback">Vui lòng điền tên đăng nhập.</div>
+    </div>
+    
+    <div class="mb-3">
+      <label for="pwd" class="form-label">Mật khẩu:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Nhập mật khẩu" name="pswd" required>
+      <div class="valid-feedback">Hợp lệ.</div>
+      <div class="invalid-feedback">Vui lòng điền mật khẩu.</div>
+    </div>
+
+    <div class="form-check mb-3">
+      <input class="form-check-input" type="checkbox" id="myCheck" name="remember" required>
+      <label class="form-check-label" for="myCheck">Tôi đồng ý với các điều khoản và điều kiện.</label>
+      <div class="valid-feedback">Hợp lệ.</div>
+      <div class="invalid-feedback">Bạn phải tích vào ô này để tiếp tục.</div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Gửi thông tin</button>
+  </form>
+
+</div>
+
+<div class="container-fluid mt-5 p-3 bg-light text-center border-top">
+  <small>© 2026 Phạm Tiến Mạnh</small>
+</div>
+
+<script>
+// Hàm này sẽ chạy ngay khi trang web tải xong
+(function () {
+  'use strict'
+
+  // Lấy tất cả các form có class .needs-validation
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Duyệt qua từng form và ngăn không cho gửi nếu có lỗi
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        // Nếu form không hợp lệ (chưa điền đủ)
+        if (!form.checkValidity()) {
+          event.preventDefault() // Chặn gửi đi
+          event.stopPropagation() // Dừng sự kiện
+        }
+
+        // Thêm class này vào để hiện thị màu xanh/đỏ
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+</script>
+
+</body>
+</html>
