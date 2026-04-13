@@ -46,28 +46,40 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/ptien/OneDrive/Desktop/PhamTienManh_PTPMQL_2221050255/PhamTienManh_PTPMQL_2221050255/FirstWebMVC/Views/persion/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NccGVyc2lvblxDcmVhdGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/ptien/OneDrive/Desktop/PhamTienManh_PTPMQL_2221050255/PhamTienManh_PTPMQL_2221050255/FirstWebMVC/Views/persion/Delete.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NccGVyc2lvblxEZWxldGUuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/ptien/OneDrive/Desktop/PhamTienManh_PTPMQL_2221050255/PhamTienManh_PTPMQL_2221050255/FirstWebMVC/Views/persion/Edit.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NccGVyc2lvblxFZGl0LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/ptien/OneDrive/Desktop/PhamTienManh_PTPMQL_2221050255/PhamTienManh_PTPMQL_2221050255/FirstWebMVC/Views/persion/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NccGVyc2lvblxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/ptien/OneDrive/Desktop/PhamTienManh_PTPMQL_2221050255/PhamTienManh_PTPMQL_2221050255/FirstWebMVC/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/ptien/OneDrive/Desktop/PhamTienManh_PTPMQL_2221050255/PhamTienManh_PTPMQL_2221050255/FirstWebMVC/Views/Shared/NotFound.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE5vdEZvdW5kLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ptien/OneDrive/Desktop/PhamTienManh_PTPMQL_2221050255/PhamTienManh_PTPMQL_2221050255/FirstWebMVC/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ptien/OneDrive/Desktop/PhamTienManh_PTPMQL_2221050255/PhamTienManh_PTPMQL_2221050255/FirstWebMVC/Views/Student/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ptien/OneDrive/Desktop/PhamTienManh_PTPMQL_2221050255/PhamTienManh_PTPMQL_2221050255/FirstWebMVC/Views/Student/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ptien/OneDrive/Desktop/PhamTienManh_PTPMQL_2221050255/PhamTienManh_PTPMQL_2221050255/FirstWebMVC/Views/Student/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ptien/OneDrive/Desktop/PhamTienManh_PTPMQL_2221050255/PhamTienManh_PTPMQL_2221050255/FirstWebMVC/Views/Student/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ptien/OneDrive/Desktop/PhamTienManh_PTPMQL_2221050255/PhamTienManh_PTPMQL_2221050255/FirstWebMVC/Views/Student/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ptien/OneDrive/Desktop/PhamTienManh_PTPMQL_2221050255/PhamTienManh_PTPMQL_2221050255/FirstWebMVC/Views/Test/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVzdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ptien/OneDrive/Desktop/PhamTienManh_PTPMQL_2221050255/PhamTienManh_PTPMQL_2221050255/FirstWebMVC/Views/_ViewImports.cshtml]

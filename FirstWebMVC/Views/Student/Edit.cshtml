@@ -1,0 +1,49 @@
+@model FirstWebMVC.Models.Entities.Student
+
+@{
+    ViewData["Title"] = "Chỉnh sửa Sinh viên";
+}
+
+<h2>Chỉnh sửa thông tin Sinh viên</h2>
+<hr />
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            
+            <div class="form-group mb-3">
+                <label asp-for="StudentCode" class="control-label">Mã Sinh Viên</label>
+                <input asp-for="StudentCode" class="form-control" readonly />
+                <span asp-validation-for="StudentCode" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group mb-3">
+                <label asp-for="FullName" class="control-label">Họ và Tên</label>
+                <input asp-for="FullName" class="form-control" />
+                <span asp-validation-for="FullName" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Age" class="control-label">Tuổi</label>
+                <input asp-for="Age" class="form-control" type="number" />
+                <span asp-validation-for="Age" class="text-danger"></span>
+            </div>
+
+            <div class="form-group mb-3">
+                <label asp-for="Email" class="control-label">Email</label>
+                <input asp-for="Email" class="form-control" type="email" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group mt-3">
+                <input type="submit" value="Lưu thay đổi" class="btn btn-warning" />
+                <a asp-action="Index" class="btn btn-secondary ms-2">Hủy / Quay lại</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

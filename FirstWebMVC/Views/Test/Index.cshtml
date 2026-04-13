@@ -1,0 +1,26 @@
+@{
+    ViewBag.Title = "Ví dụ Nhập Tên";
+}
+
+<h2>Gửi lời chào</h2>
+
+<form action="/Test/Index" method="post">
+    
+    <div class="form-group">
+        <label>Nhập họ tên của bạn:</label>
+        <input type="text" name="hoTen" class="form-control" placeholder="Ví dụ: Nguyễn Văn A" />
+    </div>
+    
+    <br />
+    <button type="submit" class="btn btn-primary">Gửi Lời Chào</button>
+
+</form>
+
+<hr />
+
+@if (ViewBag.LoiNhan != null)
+{
+    <div class="alert alert-success">
+        <h3>@ViewBag.LoiNhan</h3>
+    </div>
+}
