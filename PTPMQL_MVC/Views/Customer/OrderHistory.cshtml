@@ -1,0 +1,30 @@
+@using PTPMQL_MVC.Models.Entities
+@model IEnumerable<Order>
+
+<h2>Đơn hàng của khách hàng</h2>
+
+@foreach (var order in Model)
+{
+    <div style="border:1px solid #ccc; padding:10px; margin-bottom:15px;">
+        <h4>Đơn hàng #@order.OrderId</h4>
+        <p>Ngày đặt: @order.OrderDate.ToShortDateString()</p>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Sản phẩm</th>
+                    <th>Số lượng</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in order.OrderDetails)
+                {
+                    <tr>
+                        <td>@item.Product?.ProductName</td>
+                        <td>@item.Quantity</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+} 
