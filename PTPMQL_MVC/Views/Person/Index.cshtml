@@ -4,54 +4,52 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<h1>Quản lý Person</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create" class="btn btn-primary">Create New</a>
 </p>
+
+<!-- Khu vực Upload File Excel -->
+<div class="card mb-4">
+    <div class="card-body">
+        <h5 class="card-title">Nhập dữ liệu từ Excel</h5>
+        <form asp-action="Upload" method="post" enctype="multipart/form-data" class="row g-3">
+            <div class="col-auto">
+                <input type="file" name="file" class="form-control" accept=".xlsx, .xls" required />
+            </div>
+            <div class="col-auto">
+                <button type="submit" class="btn btn-success">Upload & Import</button>
+            </div>
+            <div class="col-auto">
+                <a href="~/Templates/PersonTemplate.xlsx" class="btn btn-outline-secondary">Tải file mẫu</a>
+            </div>
+        </form>
+    </div>
+</div>
 
 <table class="table">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.PersonId)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FullName)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Address)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Age)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Email)
-            </th>
-            <th></th>
+            <th>@Html.DisplayNameFor(model => model.PersonId)</th>
+            <th>@Html.DisplayNameFor(model => model.FullName)</th>
+            <th>@Html.DisplayNameFor(model => model.Address)</th>
+            <th>@Html.DisplayNameFor(model => model.Age)</th>
+            <th>@Html.DisplayNameFor(model => model.Email)</th>
+            <th>Thao tác</th>
         </tr>
     </thead>
     <tbody>
 @foreach (var item in Model) {
         <tr>
+            <td>@Html.DisplayFor(modelItem => item.PersonId)</td>
+            <td>@Html.DisplayFor(modelItem => item.FullName)</td>
+            <td>@Html.DisplayFor(modelItem => item.Address)</td>
+            <td>@Html.DisplayFor(modelItem => item.Age)</td>
+            <td>@Html.DisplayFor(modelItem => item.Email)</td>
             <td>
-                @Html.DisplayFor(modelItem => item.PersonId)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FullName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Address)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Age)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Email)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.PersonId">Edit</a> |
-                <a asp-action="Delete" asp-route-id="@item.PersonId">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.PersonId" class="btn btn-sm btn-warning">Edit</a> |
+                <a asp-action="Delete" asp-route-id="@item.PersonId" class="btn btn-sm btn-danger">Delete</a>
             </td>
         </tr>
 }
